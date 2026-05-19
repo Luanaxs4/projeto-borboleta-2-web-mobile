@@ -1,0 +1,74 @@
+/* TELA CALENDÁRIO */
+.container-data-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.date-info-btns {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.date-info-btns button {
+    background-color: transparent;
+    border: 0;
+}
+
+.container-data-items {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(150px, 1fr)); /* Prevents squishing */
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border-radius: 12px;
+}
+
+.container-data-items::-webkit-scrollbar {
+    height: 8px;
+}
+.container-data-items::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+.container-data-items::-webkit-scrollbar-thumb {
+    background: #2f5fa3;
+    border-radius: 10px;
+}
+.container-data-items::-webkit-scrollbar-thumb:hover {
+    background: #1e3d6b;
+}
+
+.container-data-items h3{
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: #2f5fa3;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.ditem{
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ditem .ditems-rect {
+    background: seashell;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem;
+}

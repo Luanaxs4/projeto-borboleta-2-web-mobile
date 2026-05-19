@@ -1,0 +1,172 @@
+
+#header {
+    width: 100%;
+    background-color: #173660;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-item {
+    margin: 0 15px;
+}
+
+.menu-link {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: block;
+    background: transparent;
+    border: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.15rem;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.menu-link:not(.common-btn):not(.common-btn-outline):hover {
+    background-color: #285088;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.common-btn {
+    background: white;
+    border: 1px solid white;
+    color: #285088;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.common-btn:hover {
+    background: #285088;
+    color: white;
+    transition: .2s;
+}
+
+.common-btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.common-btn-outline:hover {
+    background: white;
+    color: #285088;
+    transition: .2s;
+}
+
+.menu-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn button {
+    border: none;
+    background-color: #0a182c;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.menu-btn button:hover {
+    background-color: #2f5fa3;
+    cursor: pointer;
+}
+
+.menu-btn button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    /*-------------------------menu-----------------------*/
+    .menu {
+        padding: 1.5rem 4rem;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+
+    .mobile-menu-icon {
+        display: flex;
+        justify-content: center;
+        width: 50px;
+
+    }
+
+    .mobile-menu-icon img {
+        width: 100%;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .menu-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .menu-btn {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .menu-btn button {
+        width: 100%;
+
+    }
+
+    .open {
+        display: block;
+    }
+}

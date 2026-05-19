@@ -1,0 +1,23 @@
+*{
+    margin:0
+
+}
+
+.geral-eventos{
+    width: 100%;
+    
+}
+
+.conteiner-img-evento {
+    position: relative;   /* ESSENCIAL para o fill funcionar */
+    width: 50%;
+    aspect-ratio: 16/9;   /* Ou um height fixo */
+    overflow: hidden;
+    margin: 0 25%;
+
+}
+
+.img_evento {
+    object-fit: cover;
+
+}

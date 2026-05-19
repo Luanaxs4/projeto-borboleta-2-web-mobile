@@ -1,0 +1,48 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+p,
+span {
+    font-size: 1.5rem;
+}
+
+h2,
+h3,
+p,
+label,
+span {
+    color: var(--dark);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    color: var(--dark-variation);
+}
+
+:root {
+    --primary: #173660;
+    --light: #F6F6F6;
+    --light-variation: #e8e8e8;
+    --dark: #3c3c3c;
+    --dark-variation: #5e5e5e;
+
+}

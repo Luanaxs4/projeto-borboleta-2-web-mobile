@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "titulo": "Estudantes da FCI Mackenzie desenvolvem site para ampliar serviços do CIPCD em São Paulo",
+        "amostra": "Cinco estudantes da Faculdade de Computação e Informática da Universidade Presbiteriana Mackenzie desenvolveram um site para o CIPCD com o objetivo de modernizar o atendimento e ampliar a divulgação dos serviços, permitindo que o público-alvo realize solicitações e acompanhe pedidos online de forma mais ágil e acessível; a iniciativa fortalece a inclusão digital, amplia o alcance do centro e demonstra o impacto positivo da tecnologia no apoio às políticas públicas de acessibilidade.",
+        "conteudo": [
+            "Cinco estudantes da Faculdade de Computação e Informática (FCI) da Universidade Presbiteriana Mackenzie desenvolveram um site voltado ao Centro de Informação à Pessoa com Deficiência (CIPCD), com o objetivo de modernizar o atendimento e ampliar a divulgação dos serviços oferecidos à população. A iniciativa surgiu como parte de um projeto acadêmico e busca facilitar o acesso de usuários às informações e recursos disponibilizados pelo centro.",
+            "A nova plataforma permite que os “clientes” do CIPCD realizem solicitações e encomendas de serviços de forma online, tornando o processo mais ágil, acessível e organizado. Entre as funcionalidades, destacam-se o cadastro de usuários, acompanhamento de pedidos e acesso a orientações sobre políticas públicas e serviços especializados, alinhando-se à proposta de atendimento inclusivo já presente nas unidades físicas.",
+            "O projeto também contribui para dar maior visibilidade ao trabalho realizado pelo CIPCD, fortalecendo sua presença digital e ampliando o alcance das ações voltadas às pessoas com deficiência. Segundo os estudantes, a ideia é utilizar a tecnologia como ferramenta de inclusão, garantindo que mais pessoas tenham acesso aos serviços com autonomia e praticidade.",
+            "A iniciativa reforça a importância da parceria entre educação e responsabilidade social, demonstrando como soluções tecnológicas podem impactar positivamente a sociedade e apoiar políticas públicas de acessibilidade e inclusão."
+        ],
+        "imagem": "/assets/capa_noticia_2.png",
+        "showDetails": false
+    },
+    {
+        "id": 2,
+        "titulo": "Aniversário de inauguração da unidade na Estação Santa Cruz",
+        "amostra": "Em 2026, o CIPCD celebra mais um ano desde sua inauguração na Estação Santa Cruz, consolidando-se como referência em inclusão e acessibilidade em São Paulo. Com atendimento humanizado, estrutura moderna e serviços essenciais, como orientação e apoio às pessoas com deficiência, o centro se destaca pela Sala de Acomodação Sensorial e pela ampliação da rede junto às unidades da Barra Funda e Tatuapé, reforçando o compromisso com políticas públicas inclusivas.",
+        "conteudo": [
+            "Em 2026, o Centro de Informação à Pessoa com Deficiência (CIPCD) comemora mais um ano desde sua inauguração na Estação Santa Cruz, consolidando-se como um importante marco na promoção da acessibilidade e inclusão na cidade de São Paulo. Criado em parceria entre a Secretaria Estadual dos Direitos da Pessoa com Deficiência (SEDPcD) e o Instituto de Tecnologia Social (ITS Brasil), o espaço se destacou desde o início por sua estrutura moderna e atendimento humanizado, oferecendo serviços essenciais como orientação sobre políticas públicas, encaminhamento para serviços especializados e pequenos reparos em equipamentos de mobilidade.",
+            "Ao longo desse período, o CIPCD fortaleceu sua atuação e contribuiu para a ampliação da rede de apoio às pessoas com deficiência, integrando-se aos centros já existentes nas estações Barra Funda e Tatuapé, que também passaram por processos de modernização. Um dos grandes diferenciais do centro é a Sala de Acomodação Sensorial, pensada para acolher pessoas neurodivergentes com conforto e segurança durante seus deslocamentos.",
+            "A celebração do aniversário reforça o compromisso contínuo das instituições envolvidas com a promoção dos direitos das pessoas com deficiência, destacando a importância de políticas públicas inclusivas e da expansão de iniciativas que garantam mais autonomia, dignidade e qualidade de vida para toda a população."
+        ],
+        "imagem": "/assets/inauguracao_scz.jpg",
+        "showDetails": false
+    },
+    {
+        "id": 3,
+        "titulo": "CIPcD Metrô Barra Funda é reinaugurado totalmente revitalizado e no Metrô Tatuapé foi apresentado o novo espaço CIPcD",
+        "amostra": "Os Centros de Informação à Pessoa com Deficiência (CIPcD) das estações Barra Funda e Tatuapé, em São Paulo, foram reinaugurados em 1º de agosto de 2025 após passarem por revitalização, com destaque para a criação de uma Sala de Acomodação Sensorial na Barra Funda, voltada ao conforto de pessoas neurodivergentes e com deficiência sensorial no transporte público; o evento contou com a presença de autoridades, apresentações culturais e uma exposição artística, reforçando o compromisso do estado com a acessibilidade, inclusão e valorização da diversidade.",
+        "conteudo": [
+            "Os Centros de Informação à Pessoa com Deficiência (CIPcD) das estações Barra Funda e Tatuapé, em São Paulo, foram reinaugurados em 1º de agosto de 2025 após passarem por revitalização. O principal destaque foi a criação da Sala de Acomodação Sensorial na unidade Barra Funda, um espaço inovador voltado ao acolhimento de pessoas neurodivergentes e com deficiência sensorial durante o uso do transporte público.",
+            "A cerimônia contou com a presença de autoridades estaduais, representantes institucionais e do Instituto de Tecnologia Social, responsável pela execução do projeto. O evento incluiu o descerramento da nova placa do centro, além de uma apresentação cultural que destacou a arte como instrumento de inclusão e transformação social.",
+            "Ao longo do dia, também foi realizada a reinauguração do CIPcD da Estação Tatuapé, com uma exposição artística voltada à temática da acessibilidade e identidade. A iniciativa reforça o compromisso do Estado de São Paulo com políticas públicas inclusivas, ampliando o acesso, o acolhimento e o respeito à diversidade."
+        ],
+        "imagem": "/assets/reinauguracao_bfu.jpg",
+        "showDetails": false
+    }
+]

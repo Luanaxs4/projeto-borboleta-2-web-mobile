@@ -1,0 +1,31 @@
+.rodape {
+    background-color: #173660 !important;
+    color: #ffffff;
+    padding: 4rem 5% 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.rodape>section:first-child {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.rodape>section:first-child img {
+    max-width: 50px;
+}
+
+.rodape>section:first-child p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 400px;
+    color: rgba(255, 255, 255, 0.85);
+}

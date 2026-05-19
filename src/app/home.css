@@ -1,0 +1,623 @@
+/*--------------------------------Introdução-------------*/
+
+#introducao {
+    background-color: #9ebde7;
+    width: 100%;
+    min-height: 65vh;
+    margin: 0 0 1rem 0;
+    padding: 2rem 5rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#introducao h1 {
+    text-align: center;
+    color: #173660;
+}
+
+#introducao p {
+    font-size: 1.2rem;
+    color: #000;
+    margin: 2rem;
+    text-align: center;
+
+}
+
+#btn-int button {
+    border: none;
+    background-color: #062d64;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+#btn-int button:hover {
+    background-color: #285088;
+}
+
+#btn-int button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/*Sobre Nos*/
+#texto-sobre-nos {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.texto {
+  flex: 1;
+}
+
+.video {
+  width: 350px;
+  height: 660px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#texto-sobre-nos p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+/*--MENU---*/
+
+/*---EVENTOS-----*/
+
+#eventos {
+    width: 60%;
+    margin: 0 20%;
+    padding-top: 4.5rem;
+}
+
+#eventos p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#eventos h2 {
+    margin-bottom: 2rem;
+}
+
+#eventos h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#eventos button {
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    color: #232271;
+}
+
+#eventos button:hover {
+    color: #4744e5;
+    cursor: pointer;
+}
+
+/*de dentro*/
+.card_evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 90%;
+}
+
+.out-lista-eventos{
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.lista-eventos::-webkit-scrollbar {
+  display: none;                /* Chrome/Safari */
+}
+
+.slide{
+    min-width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.lista-eventos a {
+    text-decoration: none !important;
+}
+
+.lista-eventos{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;   
+
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 2rem;
+  background: #00000055;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.seta:hover {
+  background: #00000099;
+}
+
+.seta-esq {
+  left: 0.5rem;
+}
+
+.seta-dir {
+  right: 0.5rem;
+}
+
+.card_evento {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 90%;
+}
+
+.escrita_card_evento {
+    flex: 55%;
+    width: 80%;
+    text-align: center;
+    padding: 2%;
+}
+
+.hide {
+    display: none;
+}
+
+.img_card_evento {
+    flex: 45%;
+}
+
+.img_evento,
+#eventos-comentarios img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#eventos-comentarios {
+    width: 100%;
+    text-align: center;
+    background-color: #173660;
+    padding: 3rem 0;
+}
+
+#eventos-comentarios h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#flex_comentarios {
+    display: flex;
+    width: 60%;
+    margin: 0 20%;
+    align-content: space-between;
+}
+
+.card_comentarios {
+    flex: 33%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    border: 0.1rem solid #d3d3d3;
+    border-radius: 12%;
+}
+
+.img_comentarios {
+    flex: 30%;
+    padding: 0.5rem;
+}
+
+.img_comentarios img {
+    width: 100%;
+    height: 4rem;
+    clip-path: ellipse(50% 50%);
+}
+
+.escrita_comentarios {
+    flex: 70%;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+.escrita_comentarios p {
+    font-size: 1.05rem;
+    color: #d3d3d3;
+}
+
+#locais {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 6rem 20%;
+}
+
+
+#locais>section:first-child {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+#locais h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+#locais p {
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+
+#locais>section:last-child {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#locais img {
+    width: 50%;
+}
+
+.map-container {
+    width: 640px;
+    height: 430px;
+    /* Shorter than the iframe height to hide the bottom or crop correctly */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+    /* Optional: adds a border back since the iframe border is cropped */
+}
+
+.map-container iframe {
+    margin-top: -60px;
+    /* Adjust this value until the black bar disappears */
+    border: 0;
+}
+
+
+#nomes {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#nomes p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    width: 90vw;
+    max-width: 1200px;
+    width: 60%;
+    margin: 0 20%;
+
+}
+
+#galeria {
+    background: var(--light);
+    width: 100%;
+}
+
+.container-galeria {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.galeria-txt {
+    display: inherit;
+    flex-direction: inherit;
+    width: 100%;
+    max-width: 864px;
+    gap: 1rem;
+
+    p {
+        color: var(--dark-variation);
+    }
+}
+
+.galeria-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 4rem;
+    width: 100%;
+}
+
+.galeria-imgs img {
+    width: 100%;
+    background-color: rgb(221, 228, 235);
+    content: "";
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+/* TELA CALENDÁRIO */
+.container-data-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.date-info-btns {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.date-info-btns button {
+    background-color: transparent;
+    border: 0;
+}
+
+.container-data-items {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(150px, 1fr)); /* Prevents squishing */
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border-radius: 12px;
+}
+
+.container-data-items::-webkit-scrollbar {
+    height: 8px;
+}
+.container-data-items::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+.container-data-items::-webkit-scrollbar-thumb {
+    background: #2f5fa3;
+    border-radius: 10px;
+}
+.container-data-items::-webkit-scrollbar-thumb:hover {
+    background: #1e3d6b;
+}
+
+.container-data-items h3{
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: #2f5fa3;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.ditem{
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ditem .ditems-rect {
+    background: seashell;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+/* TELA AGENDAR */
+.form-container {
+    max-width: 880px;
+    width: 100%;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.form-wrapper {
+    padding: 2rem 2rem 1.8rem 2rem;
+}
+
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.field-group {
+    flex: 1 1 calc(50% - 1.5rem);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.field-group label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--primary);
+    opacity: 0.85;
+}
+
+.field-group input,
+.field-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 1rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: #fefefe;
+    transition: all 0.2s;
+    color: #1e293b;
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(45, 44, 85, 0.15);
+}
+
+.field-group input::placeholder,
+.field-group textarea::placeholder {
+    color: #a0aec0;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.full-width {
+    flex: 1 1 100%;
+    margin-top: 0.25rem;
+}
+
+.full-width textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.desc-section {
+    margin: 0.5rem 0 1.2rem 0;
+}
+
+.btn-submit {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin-top: 0.75rem;
+    margin-bottom: 1.8rem;
+    font-family: inherit;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 8px rgba(45, 44, 85, 0.2);
+}
+
+.btn-submit:hover {
+    background-color: #1f1e46;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px -8px rgba(45, 44, 85, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(1px);
+}
+
+input[type="text"]:disabled,
+textarea:disabled {
+    background-color: #f8fafc;
+}
+
+
+@media (max-width: 900px) {
+
+    /*-------------------------evento-----------------------*/
+
+    .card_evento {
+        flex-direction: column;
+    }
+
+    #eventos {
+        width: 80%;
+        margin: 0 10%;
+    }
+    /*---------------------Sobre nos----------------------------*/
+    .conteudo {
+        flex-direction: column;
+    }
+
+    /*-------------------------evento-comentarios-----------------------*/
+
+    #flex_comentarios {
+        flex-direction: column;
+    }
+
+    .form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+        padding-left: 0.8rem;
+    }
+
+    .field-group {
+        flex: 1 1 100%;
+    }
+
+}
