@@ -22,19 +22,19 @@ export default function Home() {
   }
 
   const slide = (direction) => {
-  const carousel = document.getElementById("carrossel");
-  const width = carousel.clientWidth;
+    const carousel = document.getElementById("carrossel");
+    const width = carousel.clientWidth;
 
-  if (direction === "left") {
-    carousel.scrollLeft -= width;
-  } else {
-    carousel.scrollLeft += width;
-  }
+    if (direction === "left") {
+      carousel.scrollLeft -= width;
+    } else {
+      carousel.scrollLeft += width;
+    }
 
-  if (width===0){
-    
-  }
-};
+    if (width === 0) {
+
+    }
+  };
 
   return (
     <main>
@@ -74,11 +74,11 @@ export default function Home() {
                     </article>
                     <section className="img_card_evento">
                       <Image
-                      width={1000}
-                      height={300}
-                      className="img_evento"
-                      src={evento.imagem}
-                      alt="Imagem do evento"
+                        width={1000}
+                        height={300}
+                        className="img_evento"
+                        src={evento.imagem}
+                        alt="Imagem do evento"
                       />
                     </section>
                   </section>
@@ -127,34 +127,45 @@ export default function Home() {
       </section>
 
       <section id="locais">
+        <h2>Locais</h2>
         <section>
-          <h2>Locais</h2>
-          <p>
-            Unidade Barra Funda<br />
-            Estação Palmeiras-Barra Funda<br />
-            - Rua Bento Teobaldo Ferraz 119 - Barra Funda/SP<br />
-            - (11) 94216-9616
-          </p>
-          <p>
-            Unidade Tatuapé<br />
-            Estação Tatuapé<br />
-            - Rua Melo Freire, S/N - Tatuapé/SP<br />
-            - (11) 91775-3152
-          </p>
-          <p>
-            Unidade Santa Cruz<br />
-            Estação Santa Cruz<br />
-            - Rua Domingos de Morais, 2494 - Vila Mariana/SP<br />
-            - (11) 91126-2881
-          </p>
+          <div className="locais-container">
+            <article>
+              <div className="local-item-txt">
+                <h3>Unidade Barra Funda <small>Estação Palmeiras-Barra Funda</small></h3>
+                <ul>
+                  <li>🗺️ Rua Bento Teobaldo Ferraz 119 - Barra Funda/SP</li>
+                  <li>☎️ (11) 94216-9616</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <div className="local-item-txt">
+                <h3>Unidade Tatuapé <small>Estação Tatuapé</small></h3>
+                <ul>
+                  <li>🗺️ Rua Melo Freire, S/N - Tatuapé/SP</li>
+                  <li>☎️ (11) 91775-3152</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <div className="local-item-txt">
+                <h3>Unidade Santa Cruz <small>Estação Santa Cruz</small></h3>
+                <ul>
+                  <li>🗺️ Rua Domingos de Morais, 2494 - Vila Mariana/SP</li>
+                  <li>☎️ (11) 91126-2881</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=1DrhXC5VOuon_v7DUojTja69QQV1GBUs&ehbc=2E312F&noprof=1"
+              width="640"
+              height="480">
+            </iframe>
+          </div>
         </section>
-        <div className="map-container">
-          <iframe
-            src="https://www.google.com/maps/d/embed?mid=1DrhXC5VOuon_v7DUojTja69QQV1GBUs&ehbc=2E312F&noprof=1"
-            width="640"
-            height="480">
-          </iframe>
-        </div>
       </section>
     </main>
   );

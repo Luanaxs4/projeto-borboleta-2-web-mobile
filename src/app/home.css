@@ -45,38 +45,38 @@
 
 /*Sobre Nos*/
 #texto-sobre-nos {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 2rem auto 0 auto;
 }
 
 .conteudo {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 .texto {
-  flex: 1;
+    flex: 1;
 }
 
 .video {
-  width: 350px;
-  height: 660px;
-  border-radius: 20px;
-  overflow: hidden;
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
 #texto-sobre-nos p {
-  margin: 1rem 0;
-  text-align: justify;
+    margin: 1rem 0;
+    text-align: justify;
 }
 
 /*--MENU---*/
@@ -84,9 +84,14 @@
 /*---EVENTOS-----*/
 
 #eventos {
-    width: 60%;
-    margin: 0 20%;
+    margin-top: 3rem;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    background-color: #ededed;
+    text-align: center;
 }
 
 #eventos p {
@@ -125,17 +130,17 @@
     width: 90%;
 }
 
-.out-lista-eventos{
+.out-lista-eventos {
     position: relative;
     width: 100%;
-    margin-bottom: 3rem;
 }
 
 .lista-eventos::-webkit-scrollbar {
-  display: none;                /* Chrome/Safari */
+    display: none;
+    /* Chrome/Safari */
 }
 
-.slide{
+.slide {
     min-width: 100%;
     scroll-snap-align: start;
     display: flex;
@@ -147,50 +152,51 @@
     text-decoration: none !important;
 }
 
-.lista-eventos{
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  scrollbar-width: none;   
+.lista-eventos {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
 
 }
 
 .seta {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  font-size: 2rem;
-  background: #00000055;
-  border: none;
-  color: white;
-  padding: 0.4rem 0.7rem;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.05);
+    border: none;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
 }
 
 .seta:hover {
-  background: #00000099;
+    background: #00000099;
 }
 
 .seta-esq {
-  left: 0.5rem;
+    left: 0.5rem;
 }
 
 .seta-dir {
-  right: 0.5rem;
+    right: 0.5rem;
 }
 
 .card_evento {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 90%;
 }
 
 .escrita_card_evento {
@@ -266,20 +272,18 @@
 
 #locais {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     background-color: #ffffff;
-    gap: 4rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 6rem 20%;
 }
 
 
-#locais>section:first-child {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
+#locais>section {
+    width: 100%;
 }
 
 #locais h2 {
@@ -288,16 +292,31 @@
     font-weight: bold;
 }
 
-#locais p {
+#locais article {
     line-height: 1.6;
     font-size: 1.05rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    list-style: none
+}
+
+#locais article small {
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+#locais article ul {
+    list-style: none;
 }
 
 
-#locais>section:last-child {
+#locais>section {
     flex: 1;
-    min-width: 300px;
-    max-width: 450px;
+    gap: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +327,8 @@
 }
 
 .map-container {
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
     height: 430px;
     /* Shorter than the iframe height to hide the bottom or crop correctly */
     overflow: hidden;
@@ -396,7 +416,8 @@
 
 .container-data-items {
     display: grid;
-    grid-template-columns: repeat(7, minmax(150px, 1fr)); /* Prevents squishing */
+    grid-template-columns: repeat(7, minmax(150px, 1fr));
+    /* Prevents squishing */
     gap: 1.5rem;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -409,19 +430,22 @@
 .container-data-items::-webkit-scrollbar {
     height: 8px;
 }
+
 .container-data-items::-webkit-scrollbar-track {
     background: #e0e0e0;
     border-radius: 10px;
 }
+
 .container-data-items::-webkit-scrollbar-thumb {
     background: #2f5fa3;
     border-radius: 10px;
 }
+
 .container-data-items::-webkit-scrollbar-thumb:hover {
     background: #1e3d6b;
 }
 
-.container-data-items h3{
+.container-data-items h3 {
     border-radius: 1rem;
     color: white;
     display: flex;
@@ -434,7 +458,7 @@
     left: 0;
 }
 
-.ditem{
+.ditem {
     position: relative;
     height: 70vh;
     display: flex;
@@ -573,14 +597,22 @@ textarea:disabled {
     }
 
     #eventos {
-        width: 80%;
-        margin: 0 10%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
+
     /*---------------------Sobre nos----------------------------*/
     .conteudo {
         flex-direction: column;
     }
 
+    /*--------------------- Locais ----------------------------*/
+    #locais>section {
+        text-align: center;
+        flex-direction: column;
+    }
+    
     /*-------------------------evento-comentarios-----------------------*/
 
     #flex_comentarios {
