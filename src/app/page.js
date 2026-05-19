@@ -81,8 +81,8 @@ export default function Home() {
                       alt="Imagem do evento"
                       />
                     </section>
-                </section>
-              </Link>
+                  </section>
+                </Link>
               </li>
             ))}
           </ul>
