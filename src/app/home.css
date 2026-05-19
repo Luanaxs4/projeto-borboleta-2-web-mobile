@@ -324,26 +324,6 @@
     border: 0;
 }
 
-
-#nomes {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding-top: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-    max-width: 1200px;
-}
-
-#nomes p {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.6;
-    margin: 0;
-}
-
 .container {
     width: 90vw;
     max-width: 1200px;
