@@ -66,7 +66,7 @@ export default function Home() {
 
           <ul className="lista-eventos" id="carrossel">
             {eventosData.map((evento, index) => (
-              <li className="slide">
+              <li key={evento.id} className="slide">
                 <Link href={"/pages/eventos/" + evento.id}>
                   <section key={evento.id} className="card_evento">
                     <article className="escrita_card_evento">
