@@ -61,6 +61,7 @@ Como rota dinâmica, iremos fazer uma seção de Eventos reimaginada, com fotos 
   gap: 2rem;
 }
 ```
+- Eventos: Na seção "Eventos" é onde colocamos a rota dinâmica, a qual puxamos algumas informações do array por meio de .map()
 **Agendar reparo e Login**
  - Foi criado com "use cliente", para funcionar no Next.js. Os campos são controlados por useState.
  ```js
