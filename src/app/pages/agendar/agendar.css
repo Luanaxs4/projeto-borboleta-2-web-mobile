@@ -111,3 +111,17 @@ input[type="text"]:disabled,
 textarea:disabled {
     background-color: #f8fafc;
 }
+
+@media (max-width: 900px) {
+    .hero-title {
+        font-size: 1.6rem;
+        padding-left: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .field-group {
+        flex: 1 1 100%;
+    }
+
+    
+}

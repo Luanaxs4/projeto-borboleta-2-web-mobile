@@ -3,7 +3,7 @@
 #introducao {
     background-color: #9ebde7;
     width: 100%;
-    min-height: 65vh;
+    min-height: 55vh;
     margin: 0 0 1rem 0;
     padding: 2rem 5rem 2rem 5rem;
     display: flex;
@@ -18,7 +18,6 @@
 }
 
 #introducao p {
-    font-size: 1.2rem;
     color: #000;
     margin: 2rem;
     text-align: center;
@@ -92,11 +91,6 @@
     padding-bottom: 4.5rem;
     background-color: #ededed;
     text-align: center;
-}
-
-#eventos p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
 }
 
 #eventos h2 {
@@ -266,7 +260,6 @@
 }
 
 .escrita_comentarios p {
-    font-size: 1.05rem;
     color: #d3d3d3;
 }
 
@@ -287,14 +280,12 @@
 }
 
 #locais h2 {
-    font-size: 2.8rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
 
 #locais article {
     line-height: 1.6;
-    font-size: 1.05rem;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     display: block;
@@ -431,120 +422,6 @@
     padding: 0.5rem;
 }
 
-/* TELA AGENDAR */
-.form-container {
-    max-width: 880px;
-    width: 100%;
-    margin: 2rem auto;
-    background-color: #ffffff;
-    border-radius: 2rem;
-    box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    transition: all 0.2s ease;
-}
-
-.form-wrapper {
-    padding: 2rem 2rem 1.8rem 2rem;
-}
-
-.form-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 1.8rem;
-}
-
-.field-group {
-    flex: 1 1 calc(50% - 1.5rem);
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.field-group label {
-    font-weight: 600;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--primary);
-    opacity: 0.85;
-}
-
-.field-group input,
-.field-group textarea {
-    width: 100%;
-    padding: 0.85rem 1rem;
-    border: 1.5px solid #e2e8f0;
-    border-radius: 1rem;
-    font-size: 0.95rem;
-    font-family: inherit;
-    background-color: #fefefe;
-    transition: all 0.2s;
-    color: #1e293b;
-}
-
-.field-group input:focus,
-.field-group textarea:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(45, 44, 85, 0.15);
-}
-
-.field-group input::placeholder,
-.field-group textarea::placeholder {
-    color: #a0aec0;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-.full-width {
-    flex: 1 1 100%;
-    margin-top: 0.25rem;
-}
-
-.full-width textarea {
-    resize: vertical;
-    min-height: 110px;
-}
-
-.desc-section {
-    margin: 0.5rem 0 1.2rem 0;
-}
-
-.btn-submit {
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 2rem;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    margin-top: 0.75rem;
-    margin-bottom: 1.8rem;
-    font-family: inherit;
-    letter-spacing: 0.3px;
-    box-shadow: 0 4px 8px rgba(45, 44, 85, 0.2);
-}
-
-.btn-submit:hover {
-    background-color: #1f1e46;
-    transform: translateY(-2px);
-    box-shadow: 0 12px 20px -8px rgba(45, 44, 85, 0.4);
-}
-
-.btn-submit:active {
-    transform: translateY(1px);
-}
-
-input[type="text"]:disabled,
-textarea:disabled {
-    background-color: #f8fafc;
-}
-
 
 @media (max-width: 900px) {
 
@@ -579,15 +456,6 @@ textarea:disabled {
 
     .form-wrapper {
         padding: 1.5rem;
-    }
-
-    .hero-title {
-        font-size: 1.6rem;
-        padding-left: 0.8rem;
-    }
-
-    .field-group {
-        flex: 1 1 100%;
     }
 
 }

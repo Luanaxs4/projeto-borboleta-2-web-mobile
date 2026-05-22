@@ -46,3 +46,20 @@ hr {
     --dark-variation: #5e5e5e;
 
 }
+
+@media (max-width: 630px){
+    h1{
+        font-size:2.25rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p,
+    span {
+        font-size: 1.10rem;
+    }
+
+ 
+}

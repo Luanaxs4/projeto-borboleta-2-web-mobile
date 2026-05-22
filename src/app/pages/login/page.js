@@ -18,7 +18,7 @@ export default function Login() {
     }
 
     return (
-        <main className="form-container">
+        <main className="form-container-login">
             <div className="form-wrapper">
                 <h1 className="hero-title">Bem-vindo Colaborador!</h1>
                 <form onSubmit={loginColaborador} action="#" method="post">

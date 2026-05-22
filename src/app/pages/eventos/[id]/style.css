@@ -33,3 +33,9 @@
     object-fit: cover;
 
 }
+
+@media (max-width: 900px){
+    .container h1{
+        font-size:2rem;
+    }
+}
