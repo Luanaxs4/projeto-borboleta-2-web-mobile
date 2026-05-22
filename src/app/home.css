@@ -352,48 +352,6 @@
 
 }
 
-#galeria {
-    background: var(--light);
-    width: 100%;
-}
-
-.container-galeria {
-    padding: 4rem 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2.5rem;
-    text-align: center;
-}
-
-.galeria-txt {
-    display: inherit;
-    flex-direction: inherit;
-    width: 100%;
-    max-width: 864px;
-    gap: 1rem;
-
-    p {
-        color: var(--dark-variation);
-    }
-}
-
-.galeria-imgs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 4rem;
-    width: 100%;
-}
-
-.galeria-imgs img {
-    width: 100%;
-    background-color: rgb(221, 228, 235);
-    content: "";
-    object-fit: cover;
-    border-radius: 2rem;
-}
-
 /* TELA CALENDÁRIO */
 .container-data-info {
     display: flex;

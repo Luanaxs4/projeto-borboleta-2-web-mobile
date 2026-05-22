@@ -8,6 +8,18 @@
     
 }
 
+.container{
+    margin: 5% 20%;
+}
+
+.container h1{
+    text-align: center;
+}
+.container p{
+    text-align: justify;
+    margin: 3% 0%;
+}
+
 .conteiner-img-evento {
     position: relative;   /* ESSENCIAL para o fill funcionar */
     width: 50%;
