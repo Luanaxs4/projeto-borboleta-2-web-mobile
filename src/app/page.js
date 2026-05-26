@@ -1,25 +1,22 @@
 "use client"
 import Image from "next/image";
 import "./home.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
-import eventosData from './data/eventos.json';
+const eventosData = [];
 
 
 export default function Home() {
-  const [eventosShow, setEventosShow] = useState(eventosData);
+  const [eventosShow, setEventosShow] = useState();
 
-  function updateEventoShow(idx) {
-    const tempEventosShow = [...eventosShow.map((eventoTemp, eventoTempIdx) => {
-      if (eventoTempIdx === idx) {
-        eventoTemp.showDetails = !eventoTemp.showDetails;
-      }
-      return eventoTemp;
-    })];
-
-    setEventosShow(tempEventosShow);
+  function listarEventos() {
+    fetch("/api/eventos").then((response) => {
+        return response.json()
+    }).then((response) => console.log(response))
   }
+
+  useEffect(listarEventos, [])
 
   const slide = (direction) => {
     const carousel = document.getElementById("carrossel");

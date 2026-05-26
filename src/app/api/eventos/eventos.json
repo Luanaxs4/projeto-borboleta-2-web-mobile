@@ -9,8 +9,7 @@
             "O projeto também contribui para dar maior visibilidade ao trabalho realizado pelo CIPCD, fortalecendo sua presença digital e ampliando o alcance das ações voltadas às pessoas com deficiência. Segundo os estudantes, a ideia é utilizar a tecnologia como ferramenta de inclusão, garantindo que mais pessoas tenham acesso aos serviços com autonomia e praticidade.",
             "A iniciativa reforça a importância da parceria entre educação e responsabilidade social, demonstrando como soluções tecnológicas podem impactar positivamente a sociedade e apoiar políticas públicas de acessibilidade e inclusão."
         ],
-        "imagem": "/assets/capa_noticia_2.png",
-        "showDetails": false
+        "imagem": "/assets/capa_noticia_2.png"
     },
     {
         "id": 2,
@@ -21,8 +20,7 @@
             "Ao longo desse período, o CIPCD fortaleceu sua atuação e contribuiu para a ampliação da rede de apoio às pessoas com deficiência, integrando-se aos centros já existentes nas estações Barra Funda e Tatuapé, que também passaram por processos de modernização. Um dos grandes diferenciais do centro é a Sala de Acomodação Sensorial, pensada para acolher pessoas neurodivergentes com conforto e segurança durante seus deslocamentos.",
             "A celebração do aniversário reforça o compromisso contínuo das instituições envolvidas com a promoção dos direitos das pessoas com deficiência, destacando a importância de políticas públicas inclusivas e da expansão de iniciativas que garantam mais autonomia, dignidade e qualidade de vida para toda a população."
         ],
-        "imagem": "/assets/inauguracao_scz.jpg",
-        "showDetails": false
+        "imagem": "/assets/inauguracao_scz.jpg"
     },
     {
         "id": 3,
@@ -33,7 +31,6 @@
             "A cerimônia contou com a presença de autoridades estaduais, representantes institucionais e do Instituto de Tecnologia Social, responsável pela execução do projeto. O evento incluiu o descerramento da nova placa do centro, além de uma apresentação cultural que destacou a arte como instrumento de inclusão e transformação social.",
             "Ao longo do dia, também foi realizada a reinauguração do CIPcD da Estação Tatuapé, com uma exposição artística voltada à temática da acessibilidade e identidade. A iniciativa reforça o compromisso do Estado de São Paulo com políticas públicas inclusivas, ampliando o acesso, o acolhimento e o respeito à diversidade."
         ],
-        "imagem": "/assets/reinauguracao_bfu.jpg",
-        "showDetails": false
+        "imagem": "/assets/reinauguracao_bfu.jpg"
     }
 ]
