@@ -89,3 +89,5 @@ export default function Login() {
         router.push('/pages/calendario');
     }
 ```
+## API
+As features do épico de eventos serão adaptadas ao uso da API
