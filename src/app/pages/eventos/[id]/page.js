@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import "./style.css";
-import eventosData from '../../../data/eventos.json';
 
 export default function Page() {
     const params = useParams();

@@ -4,16 +4,14 @@ import "./home.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const eventosData = [];
-
 
 export default function Home() {
-  const [eventosShow, setEventosShow] = useState();
+  const [eventosData, setEventosData] = useState([]);
 
   function listarEventos() {
     fetch("/api/eventos").then((response) => {
         return response.json()
-    }).then((response) => console.log(response))
+    }).then((data) => setEventosData(data))
   }
 
   useEffect(listarEventos, [])
