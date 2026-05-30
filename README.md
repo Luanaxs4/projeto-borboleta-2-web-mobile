@@ -64,6 +64,54 @@ Como rota dinâmica, iremos fazer uma seção de Eventos reimaginada, com fotos 
 
 - Eventos: fizemos modificações nessa seção para que a funcionalidade de apresentação desses eventos ficasse mais compatível com a proposta do site, agora os blocos com os artigos estão em um carrossel para navegação e, quando clicados, abrem em uma nova página configurada com o modelo para esses artigos:
 
+<img src="src/assets/carrossel_img.png" alt="carrossel de eventos">
+
+No código abaixo, é impementada uma lista que pega o array eventosData e retorna o objeto evento junto ao seu index. Com esses elementos, ele preenche o cart_evento, o qual é envolto por uma tag Link, a qual reencaminhará para uma nova tela modelo que será preenchida com os detalhes do objeto.
+
+```html
+        <nav className="out-lista-eventos">
+          <button className="seta seta-esq" onClick={() => slide("left")}>◀</button>
+
+          <ul className="lista-eventos" id="carrossel">
+            {eventosData.map((evento, index) => (
+              <li key={evento.id} className="slide">
+                <Link href={"/pages/eventos/" + evento.id}>
+                  <section key={evento.id} className="card_evento">
+                    <article className="escrita_card_evento">
+                      <h3>{evento.titulo}</h3>
+                    </article>
+                    <section className="img_card_evento">
+                      <Image
+                        width={1000}
+                        height={300}
+                        className="img_evento"
+                        src={evento.imagem}
+                        alt="Imagem do evento"
+                      />
+                    </section>
+                  </section>
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <button className="seta seta-dir" onClick={() => slide("right")}>▶</button>
+        </nav>
+```
+Nessa lista também implementamos duas setas para navegação, que usa do DOM para conseguir a referência com carrossel e usa o clientWidth, que mede o tamanho do conteúdo no carrossel e soma ou subtrai esse tamanho para navegar pelo carrossel.
+```js
+const slide = (direction) => {
+    const carousel = document.getElementById("carrossel");
+    const width = carousel.clientWidth;
+
+    if (direction === "left") {
+      carousel.scrollLeft -= width;
+    } else {
+      carousel.scrollLeft += width;
+    }
+
+  };
+```
 
 **Agendar reparo e Login**
  - Foi criado com "use cliente", para funcionar no Next.js. Os campos são controlados por useState.
