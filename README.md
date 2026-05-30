@@ -61,6 +61,10 @@ Como rota dinâmica, iremos fazer uma seção de Eventos reimaginada, com fotos 
   gap: 2rem;
 }
 ```
+
+- Eventos: fizemos modificações nessa seção para que a funcionalidade de apresentação desses eventos ficasse mais compatível com a proposta do site, agora os blocos com os artigos estão em um carrossel para navegação e, quando clicados, abrem em uma nova página configurada com o modelo para esses artigos:
+
+
 **Agendar reparo e Login**
  - Foi criado com "use cliente", para funcionar no Next.js. Os campos são controlados por useState.
  ```js
